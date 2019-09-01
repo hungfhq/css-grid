@@ -1,0 +1,134 @@
+/* 
+- phan tich
+- dat ten 
+- code  
+ */
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weekly-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #eee;
+}
+
+.weekly-item .weekly-number {
+  font-size: 20px;
+  padding: 0 8px;
+}
+
+.weekly-item .info {
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.weekly-item .song-title {
+  margin-bottom: 8px;
+}
+
+.weekly-item .singer {
+  font-size: 13px;
+  color: #999;
+}
+
+.weekly-item .view-count {
+  font-size: 14px;
+  color: #999;
+}
+
+.album {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.album-cover {
+  width: 120px;
+  height: 120px;
+  background: url('https://loremflickr.com/320/240') no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* .album-cover .overlay1 {
+  width: 120px;
+  height: 120px;
+  background: url('./overlay.png') center;
+} */
+
+.album-cover .overlay {
+  width: 120px;
+  height: 120px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 80%);
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+
+.album-square {
+  width: 120px;
+  height: 120px;
+  background: url('https://loremflickr.com/320/240') no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.album-square .overlay {
+  width: 120px;
+  height: 120px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+.album-square:hover .overlay {
+  opacity: 1;
+  transition: 700ms 100ms;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  padding: 8px 16px;
+}
+
+.menu li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
